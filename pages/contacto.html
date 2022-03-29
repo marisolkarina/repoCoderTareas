@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../img/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Salon de Belleza Sagitario </title>
+</head>
+<body>
+	<header>
+		<!--inicia nav-->
+		<nav class="botonera">
+			<a href="../index.html">					<img src="../img/logotipo.png" alt="logotipo de Sagitario">
+			</a>
+			<div class="botonera__opciones">
+				<!-- inicia ul -->
+				<ul>
+					<li>
+						<a href="nosotros.html">Nosotros</a>
+					</li>
+					<li>
+						<a href="servicios.html">Servicios</a>
+					</li>
+					<li>
+						<a href="promociones.html">Promociones</a>
+					</li>
+					<li>
+						<a href="contacto.html">Contacto</a>
+					</li>			
+				</ul>
+				<!-- fin de ul -->
+
+				<!-- inicia botonera__opciones--redes -->
+				<div class="botonera__opciones--redes">
+					<a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square fa-3x"></i></a>
+
+					<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram-square fa-3x"></i></a>
+											
+					<a href="http://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-square fa-3x"></i></a>
+				</div>
+				<!-- fin de botonera__opciones--redes -->
+			</div>
+		</nav>
+		<!-- fin de nav -->
+			
+	</header>
+
+	<!-- inicia contacto -->
+	<main class="contacto">
+		<h1>Contacto</h1>
+	
+		<!-- inicia form -->
+		<form action="envio.php">
+
+			<!-- inicia formulario -->
+			<div class="formulario">
+
+				<!-- inicia fieldset -->
+				<fieldset>
+					<legend>Datos personales</legend>
+					<!-- inicia datosPersonales -->
+					<div class="datosPersonales">
+						<div>
+							<label for="nombre">Nombres</label>
+							<input type="text" placeholder="Marisol Karina" name="nombre" id="nombre">
+							<label for="apellido">Apellidos</label>
+							<input type="text" placeholder="Pachauri Rivera" name="apellido" id="apellido">
+						</div>
+						<div>
+							<label for="celular">Celular</label>
+							<input type="number" placeholder="999999999" name="celular" id="celular">
+							<label for="email">Email</label>
+							<input type="email" placeholder="marisol@mail.com" name="email" id="email">
+						</div>
+					</div>	
+					<!-- fin de datosPersonales -->
+				</fieldset>
+				<!-- fin de fieldset -->
+
+				<!-- inicia fieldset -->
+				<fieldset>
+					<legend>Datos del servicio</legend>
+
+					<!-- inicia datosServicio -->
+					<div class="datosServicio">
+
+						<!-- inicia fechaHora -->
+						<div class="fechaHora">
+							<div>
+								<label for="fecha">Fecha</label>
+								<input type="date" id="fecha" name="fecha" value="2022-02-28" min="2022-02-28" max="2022-12-31">
+							</div>
+							
+							<div>
+								<label for="hora">Hora</label>
+								<input type="time" id="hora" name="hora" value="08:00" min="08:00" max="22:59">
+							</div>
+						</div>
+						<!-- fin de fechaHora -->
+
+						<!-- inicia tipoServicio -->
+						<div class="tipoServicio">	
+							<p>Tipo de servicio</p>
+							
+							<div class="opciones">
+								<label for="servicio1"><input type="checkbox" id="servicio1" name="servicio1" value="corte">Corte</label>
+									
+								<label for="servicio2"><input type="checkbox" id="servicio2" name="servicio2" value="peinado">Peinado</label>
+								
+								<label for="servicio3"><input type="checkbox" id="servicio3" name="servicio3" value="coloracion">Coloración</label>
+
+								<label for="servicio4"><input type="checkbox" id="servicio4" name="servicio4" value="maquillaje">Maquillaje</label>
+
+								<label for="servicio5"><input type="checkbox" id="servicio5" name="servicio5" value="cepillado">Cepillado</label>
+									
+								<label for="servicio6"><input type="checkbox" id="servicio6" name="servicio6" value="manicure">Manicure</label>
+
+								<label for="servicio7"><input type="checkbox" id="servicio7" name="servicio7" value="alisado">Alisado</label>
+									
+								<label for="servicio8"><input type="checkbox" id="servicio8" name="servicio8" value="pedicure">Pedicure</label>
+							</div>				
+						</div>
+						<!-- fin de tipoServicio -->
+
+						<!-- inicia detalleServicio -->
+						<div class="detalleServicio">
+							<label for="detalle">Detalle del servicio</label>
+							<textarea id="detalle" name="detalle" ></textarea>
+						</div>
+						<!-- fin de detalleServicio -->
+					</div>
+					<!-- fin de datosServicio -->	
+				</fieldset>
+				<!-- fin de fieldset -->
+			</div>
+			<!-- fin de formulario -->
+
+			<!-- inicia botones -->
+			<div class="botones">
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Cancelar">
+			</div>
+			<!-- fin de botones -->
+		</form>	
+		<!-- fin de form -->
+		
+		<!-- inicia adicional -->
+		<div class="adicional">
+			<!-- inicia adicional__datos -->
+			<div class="adicional__datos">
+				<div>
+					<i class="fa-solid fa-location-dot fa-2x"></i>
+					<p>Dirección</p>
+					<p>Av. Brasil 740</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-clock fa-2x"></i>
+					<p>8:00 am - 11:00 pm</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-money-bill-1 fa-2x"></i>
+					<i class="fa-brands fa-cc-visa fa-2x"></i>
+					<i class="fa-brands fa-cc-mastercard fa-2x"></i>
+					<p>Métodos de pago</p>
+				</div>
+			</div>
+			<!-- fin de adicional__datos -->
+
+			<!-- inicia adicional__mapa-->
+			<div class="adicional__mapa">
+				<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.665317684053!2d-77.04920218535095!3d-12.066533145553501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e7b2ca8939%3A0xdd209a370c5de67f!2sAv.%20Brasil%20740%2C%20Bre%C3%B1a%2015083!5e0!3m2!1ses-419!2spe!4v1645850874678!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<!-- fin de adicional__mapa-->	
+		</div>
+		<!-- fin de adicional -->		
+	</main>
+	<!-- fin de contacto -->
+
+
+	<footer>
+		<p>Sagitario. Todos los derechos reservados 2022.</p>	
+	</footer>
+</body>
+</html>
