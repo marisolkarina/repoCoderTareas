@@ -849,37 +849,3 @@ footer p {
 
 
 
-/****** ANIMACIONES ******/
-
-.linear-gradient1 {
-	background: rgb(236,205,205);
-	background: linear-gradient(90deg, rgba(236,205,205,0.8948530095632002) 0%, rgba(178,238,237,0.8164216370141807) 0%, rgba(239,240,198,1) 73%);
-}
-
-.linear-gradient2 {
-	background: rgb(236,205,205);
-	background: linear-gradient(90deg, rgba(236,205,205,0.8948530095632002) 0%, rgba(239,240,198,1) 0%, rgba(178,238,237,0.8164216370141807) 73%);
-}
-
-.transform:hover {
-	transform: translate(0px, -5px);
-	cursor: pointer;
-}
-
-.rotate:hover {
-	transform: rotateX(45deg);
-}
-
-.skew:hover {
-	transform: skewX(-3deg);
-	transition: transform 1s;
-}
-
-.scale:hover {
-	transform: scale(0.95);
-}
-
-.scale2:hover {
-	transform: scaleX(1.05);
-	transition: transform 2s;
-}
