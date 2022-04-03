@@ -15,7 +15,9 @@ body {
 	background-color: #F2EBDC;
 }
 
-
+p {
+	font-size: 1.5rem;
+}
 
 /** Header **/
 
@@ -35,8 +37,9 @@ h1 {
 
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: #8C5C5C;
+	font-weight: bold;
 }
 
 @media (min-width:  1024px) {
@@ -47,8 +50,15 @@ h2 {
 
 h3 {
 	color: #8C5C5C;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	margin: 20px 0;
+	font-weight: bold;
+}
+
+@media (min-width:  1024px) {
+	h3 {
+		font-size: 2.5rem;
+	}
 }
 
 
@@ -126,21 +136,20 @@ h3 {
 	background-color: #FAE4C5;
 }
 
-.noticias img, .noticias p {
-	width: 100%;
-}
-
 .noticias p {
-	font-size: 2rem;
 	text-align: justify;
 }
 
-@media (min-width: 1024px) {
+.noticias img,
+.noticias p {
+	width: 80%;
+}
+
+@media (min-width: 992px) {
 	.noticias img, .noticias p{
 		width: 90%;
 	}
 }
-
 
 
 
@@ -150,108 +159,46 @@ h3 {
 
 /* Descripcion:  Sección de Misión y Visión */
 
-.descripcion {
-	display: flex;
-	flex-direction: column;
-	margin: 4rem 6rem;
-	justify-content: center;
-	gap:  3rem;
-
-}
-	
-	.descripcion article {
-		width: 100%;
-	}
-
-		.descripcion article h2 {
-			text-align: center;
-			margin: 1.5rem 0;
-			padding: 0.5rem 0;
-			border: solid 5px #FAE4C5;
-		}
-
-		.descripcion article p {
-			font-size: 2rem;
-			text-align: justify;
-		}
-
-@media (min-width: 1024px) {
-	.descripcion {
-		flex-direction: row;
-	}
-
-	.descripcion article {
-		width: 50%;
-	}
+.descripcion p {
+	text-align: justify;
 }
 
+.descripcion article {
+	padding: 0;
+}
 
-/* Sección de Equipo Profesional*/
+/* Equipo profesional */
 
 .equipo {
-	margin: 4rem 6rem;
+	text-align: justify;
 }
 
-.equipo__titulo {
-	text-align: center;
-	margin: 1.5rem 0;
-	padding: 0.5rem 0;
-	border: solid 5px #FAE4C5;
-	width: 100%;
+.equipo img {
+	width: 50%;
 }
 
-.equipo__integrantes {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap:  3rem;
-}
-
-	.equipo__integrantes article {
-		display: flex;
-		align-items: center;
+@media (min-width: 992px) {
+	
+	p {
+		font-size: 2rem;
 	}
 
-	.emilia {
-		flex-direction: row-reverse;
+	/* Misión y Visión */
+
+	.descripcion article:first-child {
+		padding: 0 0.7rem 0 0;
 	}
 
-		.equipo__integrantes img {
-			margin-top: 1rem;
-			width: 50%;
-		}
-
-		.equipo__integrantes article div {
-			font-size: 2rem;
-			width: 100%;
-		}
-
-			.equipo__integrantes div .nombre {
-				text-align: center;
-				font-weight: bold;
-			}
-
-			.equipo__integrantes article p {
-				text-align: justify;
-				margin: 2rem;
-			}
-
-@media (min-width: 1024px) {
-	.equipo__integrantes {
-		flex-direction: row;
-		justify-content: space-between;
+	.descripcion article:nth-child(2) {
+		padding: 0 0 0 0.7rem;
 	}
 
-		.equipo__integrantes article {
-			flex-direction: column;
-			width: 100%;
-		}
-
-			.equipo__integrantes img {
-				width: 100%;
-				margin-top: 1rem;
-			}
-
+	/* Equipo profesional */
+	
+	.equipo img, 
+	.equipo article div{
+		width: 96%;
+	}
 }
 
 
