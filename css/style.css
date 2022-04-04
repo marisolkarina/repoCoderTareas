@@ -16,7 +16,7 @@ body {
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 /** Header **/
@@ -177,6 +177,10 @@ h3 {
 	width: 50%;
 }
 
+.equipo article div p:first-child {
+	font-weight: bold;
+}
+
 @media (min-width: 992px) {
 	
 	p {
@@ -204,105 +208,79 @@ h3 {
 
 /**********************SERVICIOS********************/
 
-/*Grid Layout*/
-
-.contenedor-servicios {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-row: auto;
-}
-
-@media (min-width: 1024px) {
-
-	.contenedor-servicios {
-		grid-template-columns: 1fr 1fr;
-		grid-row: auto;
-	}
-
-	.header-servicios {
-		grid-column: 1 / 3;
-	}
-
-	.servicios-titulo {
-		grid-column: 1 / 3;
-	}
-
-	.servicio1, .servicio2, .servicio3 {
-		grid-column: 1 / 2;
-	}
-
-	.tabla1, .tabla2, .tabla3 {
-		grid-column: 2 / 3;
-	}
-
-	.pie-servicios {
-		grid-column: 1 / 3;
-	}
-}
-
 
 /** Main **/
 
 /* servicios-titulo */
-.servicios-titulo h1 {
+.servicios-titulo {
 	font-size: 4rem;
 	font-family: Lato, sans-serif;
+	font-weight: bold;
 	color: #8C5C5C;
 	padding-top: 2rem;
 	text-align: center;
 }
 
 
-
 /* servicio */
 
-.servicio1 img, .servicio2 img, .servicio3 img{
-	width: 80%;
-	margin-left: 3rem;
-
+.servicio {
+	margin-bottom: 2rem;
 }
 
-.servicio1 h2, .servicio2 h2, .servicio3 h2 {
-	padding: 1rem 0;
-	margin-left: 3rem;
-}
+	.servicio img {
+		width: 100%;
+	}
 
 
+/* Tablas */
 
-/* table */
-
-.tabla1, .tabla2, .tabla3 {
-	width: 80%;
+table {
 	font-size: 2rem;
-	border: solid 1rem #FAE4C5;
-	margin-top: 3rem;
-	margin-left: 3rem;
-	text-align: center;
-	border-collapse: collapse;
+	width: 100%;
 }
 
-	.precio {
-		width: 25%;
+tr td:nth-child(2) {
+	width: 30%;
+}
+
+td, th {
+	border: solid 1rem #FAE4C5;
+	text-align: center;
+}
+
+tr:hover {
+	background-color: #FAE4C5;
+}
+
+@media (min-width: 992px) {
+	.servicio {
+		margin-bottom: 0;
 	}
 
-	td, th {
-		border: solid 1rem #FAE4C5;
+	table {
+		font-size: 2rem;
+		width: 100%;
+		height: 100%;
 	}
 
-	th {
-		background-color: #FAE4C5;
-		padding: 1rem;
-	}
 
-	tr:hover {
-		background-color: #FAE4C5;
-	}
+}
 
 
 /******************PROMOCIONES**********************/
 
 
+.promociones-titulo h1 {
+	font-size: 4rem;
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+	color: #8C5C5C;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+/*
 .contenedor-promociones {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -376,7 +354,7 @@ h3 {
 .pie-promociones {
 	grid-column: 1 / 3;
 	grid-row: 5 / 6;
-}
+}*/
 
 
 /******************CONTACTO**********************/
