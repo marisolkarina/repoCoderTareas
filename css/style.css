@@ -213,7 +213,7 @@ h3 {
 
 /* servicios-titulo */
 .servicios-titulo {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family: Lato, sans-serif;
 	font-weight: bold;
 	color: #8C5C5C;
@@ -254,6 +254,10 @@ tr:hover {
 }
 
 @media (min-width: 992px) {
+	.servicios-titulo {
+		font-size: 4rem;
+	}
+
 	.servicio {
 		margin-bottom: 0;
 	}
@@ -263,16 +267,14 @@ tr:hover {
 		width: 100%;
 		height: 100%;
 	}
-
-
 }
 
 
 /******************PROMOCIONES**********************/
 
 
-.promociones-titulo h1 {
-	font-size: 4rem;
+.promociones-titulo {
+	font-size: 3rem;
 	font-family: Lato, sans-serif;
 	font-weight: bold;
 	color: #8C5C5C;
@@ -280,81 +282,39 @@ tr:hover {
 	text-align: center;
 }
 
-/*
-.contenedor-promociones {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	align-items: center;
+figure {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
 }
 
-.header-promociones {
-	grid-column: 1 / 3;
-	grid-row: 1 / 2;
+.promocion h2,
+.promocion img {
+	width: 100%;
 }
 
-.promociones-titulo {
-	grid-column: 1 / 3;
-	grid-row: 2 / 3;
-}
 
-.promociones-titulo h1 {
-	font-size: 3rem;
-	font-family: Lato, sans-serif;
-	color: #8C5C5C;
-	padding-top: 2rem;
-	text-align: center;
-}
+@media (min-width: 992px) {
 
-@media (min-width: 1024px) {
 	.promociones-titulo {
-		grid-column: 1 / 3;
-		grid-row: 2 / 3;
+		font-size: 4rem;
 	}
 
-	.promociones-titulo h1 {
-	    font-size: 4rem;
-	    font-family: Lato, sans-serif;
-		color: #8C5C5C;
-		padding-top: 2rem;
-		text-align: center;
+	figure {
+		flex-direction: row;
+		align-items: center;
+		column-gap: 2rem;
 	}
-}
 
-.prom-manicure {
-	grid-column: 1 / 2;
-	grid-row: 3 / 4;
-}
+	.promocion h2 {
+		width: 30%;
+	}
 
-.promocion1 {
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-}
+	.promocion img {
+		width: 70%;
+	}
 
-.prom-corte {
-	grid-column: 1 / 2;
-	grid-row: 4 / 5;
 }
-
-.promocion2 {
-	grid-column: 2 / 3;
-	grid-row: 4 / 5;
-}
-
-.promocion1 img, .promocion2 img {
-	width: 85%;
-	margin: 2rem;
-}
-
-.prom-manicure, .prom-corte {
-	text-align: center;
-	margin-top: 2rem;
-}
-
-.pie-promociones {
-	grid-column: 1 / 3;
-	grid-row: 5 / 6;
-}*/
 
 
 /******************CONTACTO**********************/
