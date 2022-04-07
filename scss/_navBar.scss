@@ -1,0 +1,48 @@
+.bg-rosa {
+	background-color: $mainColor;
+}
+
+.color-fucsia {
+	color: $pinkColor;
+}
+
+.botonera {
+	font-size: 2.5rem;
+
+	li {
+		&:hover {
+			background-color: $secondaryColor;
+		}
+		a {
+			font-family: $fontBotonera;
+			text-decoration: none;
+			&:hover {
+				color: $darkColor;
+			}
+		}
+	}
+}
+
+.redes{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+
+	li {
+		a {
+			&:hover {
+				i {
+					color: $secondaryColor;
+				}
+			}
+		}
+	}
+}
+
+
+//Animaciones
+
+.transform:hover {
+	transform: translate(0px, -5px);
+	cursor: pointer;
+}

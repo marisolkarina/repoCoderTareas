@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Concert+One&family=Lato:wght@300;400;700&family=Permanent+Marker&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+* {
+  font-family: "Lato", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #F2EADF; }
+
+p {
+  font-size: 1.7rem; }
+
+h1, h2, h3 {
+  color: #8C5C5C; }
+
+h1 {
+  font-family: "Concert One", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 10px; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 10rem; } }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold; }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3rem; } }
+
+h3 {
+  font-size: 2.2rem;
+  margin: 20px 0;
+  font-weight: bold; }
+  @media (min-width: 992px) {
+    h3 {
+      font-size: 2.5rem; } }
+
+.bg-rosa {
+  background-color: rgba(247, 179, 207, 0.7); }
+
+.color-fucsia {
+  color: #F84D8C; }
+
+.botonera {
+  font-size: 2.5rem; }
+  .botonera li:hover {
+    background-color: #F2EADF; }
+  .botonera li a {
+    font-family: "Permanent Marker", cursive;
+    text-decoration: none; }
+    .botonera li a:hover {
+      color: #000000; }
+
+.redes {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
+  .redes li a:hover i {
+    color: #F2EADF; }
+
+.transform:hover {
+  transform: translate(0px, -5px);
+  cursor: pointer; }
+
+.carousel-inner p {
+  font-size: 2rem;
+  color: #000000;
+  font-family: "Cantarell", sans-serif; }
+  @media (min-width: 992px) {
+    .carousel-inner p {
+      font-size: 3rem; } }
+
+.bg-blancoLight {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.border-melon {
+  border: solid 4px #FAE4C5; }
+
+.datos p {
+  line-height: 1.5rem; }
+  @media (min-width: 992px) {
+    .datos p {
+      font-size: 1.8rem; } }
+
+.linear-gradient1 {
+  background: #eccdcd;
+  background: linear-gradient(90deg, rgba(236, 205, 205, 0.894853) 0%, rgba(178, 238, 237, 0.816422) 0%, #eff0c6 73%); }
+
+.linear-gradient2 {
+  background: #eccdcd;
+  background: linear-gradient(90deg, rgba(236, 205, 205, 0.894853) 0%, #eff0c6 0%, rgba(178, 238, 237, 0.816422) 73%); }
+
+.rotate:hover {
+  transform: rotateX(45deg); }
+
+.noticias p {
+  text-align: justify; }
+
+.noticias p, .noticias img {
+  width: 80%; }
+  @media (min-width: 992px) {
+    .noticias p, .noticias img {
+      width: 90%; } }
+
+footer p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  padding: 0.5rem;
+  background-color: rgba(247, 179, 207, 0.3); }

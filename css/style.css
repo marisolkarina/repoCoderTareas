@@ -91,6 +91,8 @@ h3 {
 
 .redes{
 	list-style: none;
+	display: flex;
+	justify-content: space-around;
 }
 
 	.redes li a:hover i{
@@ -116,40 +118,11 @@ h3 {
 /***********************INDEX**********************/
 
 
-/** Main **/
 
-/*Datos*/
+/*Se añadió a estilos.scss y estilos.css*/
+/*style.css pronto se eliminará (por ahora está para 
+que funciones las demás páginas)*/
 
-.border-melon {
-	border: solid 4px #FAE4C5;
-}
-
-.datos p {
-	font-size: 1.8rem;
-	line-height: 1.5rem;
-}
-
-
-/* Noticias */
-
-.bg-melon {
-	background-color: #FAE4C5;
-}
-
-.noticias p {
-	text-align: justify;
-}
-
-.noticias img,
-.noticias p {
-	width: 80%;
-}
-
-@media (min-width: 992px) {
-	.noticias img, .noticias p{
-		width: 90%;
-	}
-}
 
 
 
@@ -208,6 +181,9 @@ h3 {
 
 /**********************SERVICIOS********************/
 
+.bg-melon {
+	background-color: #FAE4C5;
+}
 
 /** Main **/
 

@@ -1,0 +1,12 @@
+.noticias {
+	p {
+		text-align: justify;
+	}
+	p, img{
+		width: 80%;
+		@media (min-width: 992px) {
+			width: 90%;
+		}
+	}
+
+}

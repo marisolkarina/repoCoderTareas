@@ -1,0 +1,28 @@
+.border-melon {
+	border: solid 4px $melonColor;
+}
+
+.datos {
+	p {
+		line-height: 1.5rem;
+		@media (min-width: 992px) {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+
+
+.linear-gradient1 {
+	background: rgb(236,205,205);
+	background: linear-gradient(90deg, rgba(236,205,205,0.8948530095632002) 0%, rgba(178,238,237,0.8164216370141807) 0%, rgba(239,240,198,1) 73%);
+}
+
+.linear-gradient2 {
+	background: rgb(236,205,205);
+	background: linear-gradient(90deg, rgba(236,205,205,0.8948530095632002) 0%, rgba(239,240,198,1) 0%, rgba(178,238,237,0.8164216370141807) 73%);
+}
+
+.rotate:hover {
+	transform: rotateX(45deg);
+}
