@@ -1,0 +1,40 @@
+.promociones-titulo {
+	font-size: 3rem;
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+	padding-top: 2rem;
+	text-align: center;
+
+	@media (min-width: 992px) {
+		font-size: 4rem;
+	}
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+	h2 {
+		width: 100%;
+		@media (min-width: 992px) {
+			width: 40%;
+		}
+	}
+	img {
+		width: 100%;
+		@media (min-width: 992px) {
+			width: 60%;
+		}
+	}
+
+	@media (min-width: 992px) {
+		flex-direction: row;
+		align-items: center;
+		column-gap: 2rem;
+	}
+}
+
+.skew:hover {
+	transform: skewX(-3deg);
+	transition: transform 1s;
+}

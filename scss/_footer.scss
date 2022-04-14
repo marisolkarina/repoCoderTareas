@@ -4,6 +4,6 @@ footer {
 		text-align: center;
 		margin: 2rem 0 0 0;
 		padding: 0.5rem;
-		background-color: $footerColor;
+		background-color: map-get($map: $paleta, $key: 'footerColor');
 	}
 }

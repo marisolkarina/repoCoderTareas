@@ -1,8 +1,8 @@
 .carousel-inner {
 	p {
 		font-size: 2rem;
-		color: $darkColor;
-		font-family: $fontCarousel;	
+		color: map-get($map: $paleta, $key: 'darkColor');
+		font-family: $fontCarousel;
 		@media (min-width: 992px) {
 			font-size: 3rem;
 		}
@@ -11,5 +11,5 @@
 }
 
 .bg-blancoLight {
-	background-color: $lightColor;
+	background-color: map-get($map: $paleta, $key: 'lightColor');
 }

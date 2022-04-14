@@ -1,0 +1,51 @@
+.servicios-titulo {
+	font-size: 3rem;
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+	padding-top: 2rem;
+	text-align: center;
+
+	@media (min-width: 992px) {
+		font-size: 4rem;
+		font-weight: bold;
+	}
+}
+
+.servicio {
+	margin-bottom: 2rem;
+	img {
+		width: 100%;
+	}
+	@media (min-width: 992px) {
+		margin-bottom: 0;
+	}
+}
+
+table {
+	font-size: 2rem;
+	width: 100%;
+	tr {
+		&:hover {
+			background-color: map-get($map: $paleta, $key: 'melonColor');
+		}
+		th {
+			border: solid 1rem map-get($map: $paleta, $key: 'melonColor');
+			text-align: center;
+			background-color: map-get($map: $paleta, $key: 'melonColor');
+		}
+		td {
+			border: solid 1rem map-get($map: $paleta, $key: 'melonColor');
+			text-align: center;
+			&:nth-child(2) {
+				width: 30%;
+			}
+		}
+		
+	}
+	@media (min-width: 992px) {
+		font-size: 2rem;
+		width: 100%;
+		height: 100%;
+	}
+}
+

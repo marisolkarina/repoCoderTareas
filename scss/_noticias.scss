@@ -1,4 +1,7 @@
 .noticias {
+	h2 {
+		background-color: map-get($map: $paleta, $key: 'melonColor');
+	}
 	p {
 		text-align: justify;
 	}
@@ -9,4 +12,9 @@
 		}
 	}
 
+}
+
+.scale2:hover {
+	transform: scaleX(1.05);
+	transition: transform 2s;
 }

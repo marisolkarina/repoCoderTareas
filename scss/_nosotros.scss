@@ -1,0 +1,50 @@
+p {
+	@media (min-width: 992px){
+		font-size: 2rem;
+	}
+}
+
+.descripcion {
+	article {
+		padding: 0;
+		p {
+			text-align: justify;
+		}
+		&:first-child {
+			@media (min-width: 992px) {
+				padding: 0 0.7rem 0 0;
+			}
+		}
+		&:nth-child(2) {
+			@media (min-width: 992px) {
+				padding: 0 0 0 0.7rem;
+			}
+		}
+	}
+}
+
+.equipo {
+	text-align: justify;
+	article {
+		img {
+			width: 50%;
+			@media (min-width: 992px) {
+				width: 96%;
+			}
+		}
+		div {
+			p {
+				&:first-child {
+					font-weight: bold;
+				}
+			}
+			@media (min-width: 992px) {
+				width: 96%;
+			}
+		}
+	}
+}
+
+.scale:hover {
+	transform: scale(0.95);
+}

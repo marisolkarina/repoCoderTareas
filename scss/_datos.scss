@@ -1,5 +1,5 @@
 .border-melon {
-	border: solid 4px $melonColor;
+	border: solid 4px map-get($map: $paleta, $key: 'melonColor');
 }
 
 .datos {
