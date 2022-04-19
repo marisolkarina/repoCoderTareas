@@ -383,15 +383,6 @@ fieldset {
   iframe {
     width: 100%; } }
 
-@media (max-width: 992px) {
-  /*.adicional__mapa {
-		width: 60%;
-
-		iframe {
-			width: 100%;
-		}
-	}*/ }
-
 footer p {
   font-size: 1.5rem;
   text-align: center;
