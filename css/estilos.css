@@ -245,23 +245,30 @@ figure {
 
 .formulario {
   font-size: 1.8rem;
-  margin: 0 5rem; }
+  margin: 0 1rem; }
   @media (min-width: 992px) {
     .formulario {
       font-size: 2rem;
-      margin: 0 15rem; } }
+      margin: 0 5rem; } }
 
 fieldset {
-  padding: 3rem 6rem;
+  padding: 2rem;
   width: 100%;
   margin-top: 2rem;
   border: solid 2px #8C5C5C; }
   fieldset legend {
     font-weight: bold;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-align: center; }
+    @media (min-width: 992px) {
+      fieldset legend {
+        text-align: left; } }
   fieldset label {
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  @media (min-width: 992px) {
+    fieldset {
+      padding: 3rem 6rem; } }
 
 .datosPersonales {
   display: flex;
@@ -363,36 +370,27 @@ fieldset {
       column-gap: 2rem; } }
 
 .adicional {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-top: 8rem;
-  align-items: center; }
+  margin-top: 8rem; }
   .adicional .adicional__datos {
     font-size: 1.5rem;
-    margin-top: 1rem;
-    height: 100%; }
+    margin-top: 1rem; }
     .adicional .adicional__datos div {
       text-align: center; }
-      .adicional .adicional__datos div p {
-        line-height: 1.3rem; }
       .adicional .adicional__datos div i {
         margin-bottom: 2rem; }
-    @media (min-width: 992px) {
-      .adicional .adicional__datos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; } }
-  @media (min-width: 992px) {
-    .adicional {
-      flex-direction: row;
-      column-gap: 5rem;
-      justify-content: center; } }
 
-@media (max-width: 768px) {
-  .adicional__mapa {
-    width: 60%; }
-    .adicional__mapa iframe {
-      width: 100%; } }
+@media (max-width: 576px) {
+  iframe {
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  /*.adicional__mapa {
+		width: 60%;
+
+		iframe {
+			width: 100%;
+		}
+	}*/ }
 
 footer p {
   font-size: 1.5rem;
