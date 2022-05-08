@@ -7,7 +7,7 @@
 }
 
 .botonera {
-	font-size: 2.5rem;
+	font-size: 2rem;
 
 	li {
 		&:hover {
@@ -20,6 +20,9 @@
 				color: map-get($map: $paleta, $key: 'darkColor');
 			}
 		}
+	}
+	@media (min-width: 576px) {
+		font-size: 2.5rem;
 	}
 }
 

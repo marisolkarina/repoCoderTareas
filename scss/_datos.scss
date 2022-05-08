@@ -6,7 +6,7 @@
 	p {
 		line-height: 1.5rem;
 		@media (min-width: 992px) {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -14,13 +14,13 @@
 
 
 .linear-gradient1 {
-	background: rgb(236,205,205);
-	background: linear-gradient(90deg, rgba(236,205,205,0.8948530095632002) 0%, rgba(178,238,237,0.8164216370141807) 0%, rgba(239,240,198,1) 73%);
+	background: rgb(232,246,187);
+	background: linear-gradient(90deg, rgba(232,246,187,0.9200630935968137) 0%, rgba(165,229,238,0.2505953064819678) 50%, rgba(241,219,247,1) 100%);
 }
 
 .linear-gradient2 {
-	background: rgb(236,205,205);
-	background: linear-gradient(90deg, rgba(236,205,205,0.8948530095632002) 0%, rgba(239,240,198,1) 0%, rgba(178,238,237,0.8164216370141807) 73%);
+	background: rgb(232,246,187);
+	background: linear-gradient(90deg, rgba(241,219,247,1) 0%, rgba(165,229,238,0.2505953064819678) 48%, rgba(232,246,187,0.9200630935968137) 100%);
 }
 
 .rotate:hover {
